@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//DBFLUTE//DTD LastaDi 1.0//EN"
+	"http://dbflute.org/meta/lastadi10.dtd">
+<components namespace="dbflute">
+	<include condition="#exists('#path')" path="my_included_dbflute.xml"/>
+	<include path="rdb.xml"/>
+
+	<!-- The components of DBFlute Runtime. -->
+	<component name="introduction" class="jp.luxa.lom.dbflute.allcommon.DBFluteInitializer"/>
+	<component name="invokerAssistant" class="jp.luxa.lom.dbflute.allcommon.ImplementedInvokerAssistant"/>
+	<component name="behaviorCommandInvoker" class="org.dbflute.bhv.core.BehaviorCommandInvoker"/>
+	<component name="behaviorSelector" class="jp.luxa.lom.dbflute.allcommon.ImplementedBehaviorSelector"/>
+	<component name="commonColumnAutoSetupper" class="jp.luxa.lom.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
+
+	<!-- The components of Behavior. -->
+	<component name="memberBhv" class="jp.luxa.lom.dbflute.exbhv.MemberBhv"/>
+	<component name="memberAddressBhv" class="jp.luxa.lom.dbflute.exbhv.MemberAddressBhv"/>
+	<component name="memberFollowingBhv" class="jp.luxa.lom.dbflute.exbhv.MemberFollowingBhv"/>
+	<component name="memberLoginBhv" class="jp.luxa.lom.dbflute.exbhv.MemberLoginBhv"/>
+	<component name="memberSecurityBhv" class="jp.luxa.lom.dbflute.exbhv.MemberSecurityBhv"/>
+	<component name="memberServiceBhv" class="jp.luxa.lom.dbflute.exbhv.MemberServiceBhv"/>
+	<component name="memberStatusBhv" class="jp.luxa.lom.dbflute.exbhv.MemberStatusBhv"/>
+	<component name="memberWithdrawalBhv" class="jp.luxa.lom.dbflute.exbhv.MemberWithdrawalBhv"/>
+	<component name="productBhv" class="jp.luxa.lom.dbflute.exbhv.ProductBhv"/>
+	<component name="productCategoryBhv" class="jp.luxa.lom.dbflute.exbhv.ProductCategoryBhv"/>
+	<component name="productStatusBhv" class="jp.luxa.lom.dbflute.exbhv.ProductStatusBhv"/>
+	<component name="purchaseBhv" class="jp.luxa.lom.dbflute.exbhv.PurchaseBhv"/>
+	<component name="purchasePaymentBhv" class="jp.luxa.lom.dbflute.exbhv.PurchasePaymentBhv"/>
+	<component name="regionBhv" class="jp.luxa.lom.dbflute.exbhv.RegionBhv"/>
+	<component name="serviceRankBhv" class="jp.luxa.lom.dbflute.exbhv.ServiceRankBhv"/>
+	<component name="withdrawalReasonBhv" class="jp.luxa.lom.dbflute.exbhv.WithdrawalReasonBhv"/>
+</components>

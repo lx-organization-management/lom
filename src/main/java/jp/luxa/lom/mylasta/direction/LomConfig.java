@@ -48,7 +48,7 @@ public interface LomConfig extends LomEnv {
     String COOKIE_ETERNAL_EXPIRE = "cookie.eternal.expire";
 
     /** The key of the configuration. e.g. HRB */
-    String COOKIE_REMEMBER_ME_HARBOR_KEY = "cookie.remember.me.lom.key";
+    String COOKIE_REMEMBER_ME_LOM_KEY = "cookie.remember.me.lom.key";
 
     /**
      * Get the value of property as {@link String}.
@@ -206,7 +206,7 @@ public interface LomConfig extends LomEnv {
         }
 
         public String getCookieRememberMeLomKey() {
-            return get(LomConfig.COOKIE_REMEMBER_ME_HARBOR_KEY);
+            return get(LomConfig.COOKIE_REMEMBER_ME_LOM_KEY);
         }
     }
 }

@@ -30,8 +30,8 @@
 #
 map:{
     ; commonColumnMap = map:{
-        ; REGISTER_DATETIME=TIMESTAMP ; REGISTER_USER=VARCHAR
-        ; UPDATE_DATETIME=TIMESTAMP   ; UPDATE_USER=VARCHAR
+        ; REGISTER_DATETIME=TIMESTAMP
+        ; UPDATE_DATETIME=TIMESTAMP
     }
     ; beforeInsertMap = map:{
         ; REGISTER_DATETIME = $$AccessContext$$.getAccessLocalDateTimeOnThread()

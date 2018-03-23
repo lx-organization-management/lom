@@ -1,4 +1,153 @@
 map:{
+    ; 2018/03/23 18:31:10 = map:{
+        ; diffDate = 2018/03/23 18:31:10
+        ; tableDiff = map:{
+            ; account = map:{
+                ; tableName = account
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; EMPLOYEE_NO = map:{
+                        ; columnName = EMPLOYEE_NO
+                        ; diffType = ADD
+                    }
+                    ; ACCOUNT_ID = map:{
+                        ; columnName = ACCOUNT_ID
+                        ; diffType = CHANGE
+                        ; autoIncrementDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                }
+            }
+            ; user_grouping = map:{
+                ; tableName = user_grouping
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; USER_GROUPING_ID = map:{
+                        ; columnName = USER_GROUPING_ID
+                        ; diffType = CHANGE
+                        ; autoIncrementDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ; 2018/03/23 18:20:17 = map:{
+        ; diffDate = 2018/03/23 18:20:17
+        ; tableDiff = map:{
+            ; community = map:{
+                ; tableName = community
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; ACCOUNT_ID = map:{
+                        ; columnName = ACCOUNT_ID
+                        ; diffType = ADD
+                    }
+                    ; OWNER_ACCOUNT_ID = map:{
+                        ; columnName = OWNER_ACCOUNT_ID
+                        ; diffType = DELETE
+                    }
+                }
+            }
+        }
+    }
+    ; 2018/03/23 18:16:14 = map:{
+        ; diffDate = 2018/03/23 18:16:14
+        ; tableCount = map:{
+            ; next = 5
+            ; previous = 16
+        }
+        ; tableDiff = map:{
+            ; account = map:{
+                ; tableName = account
+                ; diffType = ADD
+            }
+            ; account_profile = map:{
+                ; tableName = account_profile
+                ; diffType = ADD
+            }
+            ; community = map:{
+                ; tableName = community
+                ; diffType = ADD
+            }
+            ; location = map:{
+                ; tableName = location
+                ; diffType = ADD
+            }
+            ; user_grouping = map:{
+                ; tableName = user_grouping
+                ; diffType = ADD
+            }
+            ; member = map:{
+                ; tableName = member
+                ; diffType = DELETE
+            }
+            ; member_address = map:{
+                ; tableName = member_address
+                ; diffType = DELETE
+            }
+            ; member_following = map:{
+                ; tableName = member_following
+                ; diffType = DELETE
+            }
+            ; member_login = map:{
+                ; tableName = member_login
+                ; diffType = DELETE
+            }
+            ; member_security = map:{
+                ; tableName = member_security
+                ; diffType = DELETE
+            }
+            ; member_service = map:{
+                ; tableName = member_service
+                ; diffType = DELETE
+            }
+            ; member_status = map:{
+                ; tableName = member_status
+                ; diffType = DELETE
+            }
+            ; member_withdrawal = map:{
+                ; tableName = member_withdrawal
+                ; diffType = DELETE
+            }
+            ; product = map:{
+                ; tableName = product
+                ; diffType = DELETE
+            }
+            ; product_category = map:{
+                ; tableName = product_category
+                ; diffType = DELETE
+            }
+            ; product_status = map:{
+                ; tableName = product_status
+                ; diffType = DELETE
+            }
+            ; purchase = map:{
+                ; tableName = purchase
+                ; diffType = DELETE
+            }
+            ; purchase_payment = map:{
+                ; tableName = purchase_payment
+                ; diffType = DELETE
+            }
+            ; region = map:{
+                ; tableName = region
+                ; diffType = DELETE
+            }
+            ; service_rank = map:{
+                ; tableName = service_rank
+                ; diffType = DELETE
+            }
+            ; withdrawal_reason = map:{
+                ; tableName = withdrawal_reason
+                ; diffType = DELETE
+            }
+        }
+    }
     ; 2018/03/12 12:01:35 = map:{
         ; diffDate = 2018/03/12 12:01:35
         ; tableDiff = map:{

@@ -13,20 +13,9 @@
 	<component name="commonColumnAutoSetupper" class="jp.luxa.lom.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
 
 	<!-- The components of Behavior. -->
-	<component name="memberBhv" class="jp.luxa.lom.dbflute.exbhv.MemberBhv"/>
-	<component name="memberAddressBhv" class="jp.luxa.lom.dbflute.exbhv.MemberAddressBhv"/>
-	<component name="memberFollowingBhv" class="jp.luxa.lom.dbflute.exbhv.MemberFollowingBhv"/>
-	<component name="memberLoginBhv" class="jp.luxa.lom.dbflute.exbhv.MemberLoginBhv"/>
-	<component name="memberSecurityBhv" class="jp.luxa.lom.dbflute.exbhv.MemberSecurityBhv"/>
-	<component name="memberServiceBhv" class="jp.luxa.lom.dbflute.exbhv.MemberServiceBhv"/>
-	<component name="memberStatusBhv" class="jp.luxa.lom.dbflute.exbhv.MemberStatusBhv"/>
-	<component name="memberWithdrawalBhv" class="jp.luxa.lom.dbflute.exbhv.MemberWithdrawalBhv"/>
-	<component name="productBhv" class="jp.luxa.lom.dbflute.exbhv.ProductBhv"/>
-	<component name="productCategoryBhv" class="jp.luxa.lom.dbflute.exbhv.ProductCategoryBhv"/>
-	<component name="productStatusBhv" class="jp.luxa.lom.dbflute.exbhv.ProductStatusBhv"/>
-	<component name="purchaseBhv" class="jp.luxa.lom.dbflute.exbhv.PurchaseBhv"/>
-	<component name="purchasePaymentBhv" class="jp.luxa.lom.dbflute.exbhv.PurchasePaymentBhv"/>
-	<component name="regionBhv" class="jp.luxa.lom.dbflute.exbhv.RegionBhv"/>
-	<component name="serviceRankBhv" class="jp.luxa.lom.dbflute.exbhv.ServiceRankBhv"/>
-	<component name="withdrawalReasonBhv" class="jp.luxa.lom.dbflute.exbhv.WithdrawalReasonBhv"/>
+	<component name="accountBhv" class="jp.luxa.lom.dbflute.exbhv.AccountBhv"/>
+	<component name="accountProfileBhv" class="jp.luxa.lom.dbflute.exbhv.AccountProfileBhv"/>
+	<component name="communityBhv" class="jp.luxa.lom.dbflute.exbhv.CommunityBhv"/>
+	<component name="locationBhv" class="jp.luxa.lom.dbflute.exbhv.LocationBhv"/>
+	<component name="userGroupingBhv" class="jp.luxa.lom.dbflute.exbhv.UserGroupingBhv"/>
 </components>

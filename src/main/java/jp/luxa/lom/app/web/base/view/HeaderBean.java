@@ -35,8 +35,8 @@ public class HeaderBean { // #change_it #delete_ifapi
     }
 
     public HeaderBean(LomUserBean userBean) {
-        this.memberId = userBean.getMemberId();
-        this.memberName = userBean.getMemberName();
+        this.memberId = userBean.getAccountId();
+        this.memberName = userBean.getAccountName();
         this.isLogin = true;
     }
 

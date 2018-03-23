@@ -36,18 +36,6 @@ public interface EntityDefinedCommonColumn extends Entity {
     void setRegisterDatetime(java.time.LocalDateTime registerDatetime);
 
     /**
-     * Get the value of registerUser.
-     * @return The instance of the property type. (NullAllowed)
-     */
-    String getRegisterUser();
-
-    /**
-     * Set the value of registerUser.
-     * @param registerUser The instance of the property type. (NullAllowed)
-     */
-    void setRegisterUser(String registerUser);
-
-    /**
      * Get the value of updateDatetime.
      * @return The instance of the property type. (NullAllowed)
      */
@@ -58,16 +46,4 @@ public interface EntityDefinedCommonColumn extends Entity {
      * @param updateDatetime The instance of the property type. (NullAllowed)
      */
     void setUpdateDatetime(java.time.LocalDateTime updateDatetime);
-
-    /**
-     * Get the value of updateUser.
-     * @return The instance of the property type. (NullAllowed)
-     */
-    String getUpdateUser();
-
-    /**
-     * Set the value of updateUser.
-     * @param updateUser The instance of the property type. (NullAllowed)
-     */
-    void setUpdateUser(String updateUser);
 }

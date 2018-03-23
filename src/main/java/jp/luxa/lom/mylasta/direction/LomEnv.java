@@ -62,10 +62,10 @@ public interface LomEnv {
     /** The key of the configuration. e.g. lom-support@annie.example.com */
     String MAIL_ADDRESS_SUPPORT = "mail.address.support";
 
-    /** The key of the configuration. e.g. org.h2.Driver */
+    /** The key of the configuration. e.g. com.mysql.jdbc.Driver */
     String JDBC_DRIVER = "jdbc.driver";
 
-    /** The key of the configuration. e.g. jdbc:h2:file:$classes(jp.luxa.lom.dbflute.allcommon.DBCurrent.class)/../../etc/testdb/lomdb */
+    /** The key of the configuration. e.g. jdbc:mysql://localhost:43376/lomdb */
     String JDBC_URL = "jdbc.url";
 
     /** The key of the configuration. e.g. lomdb */
@@ -77,8 +77,11 @@ public interface LomEnv {
     /** The key of the configuration. e.g. 10 */
     String JDBC_CONNECTION_POOLING_SIZE = "jdbc.connection.pooling.size";
 
-    /** The key of the configuration. e.g. localhost:8090/lom */
+    /** The key of the configuration. e.g. localhost:9090/lom */
     String SERVER_DOMAIN = "server.domain";
+
+    /** The key of the configuration. e.g.  */
+    String A = "A";
 
     /**
      * Get the value of property as {@link String}.
@@ -235,7 +238,7 @@ public interface LomEnv {
 
     /**
      * Get the value for the key 'jdbc.driver'. <br>
-     * The value is, e.g. org.h2.Driver <br>
+     * The value is, e.g. com.mysql.jdbc.Driver <br>
      * comment: The driver FQCN to connect database for JDBC
      * @return The value of found property. (NotNull: if not found, exception but basically no way)
      */
@@ -243,7 +246,7 @@ public interface LomEnv {
 
     /**
      * Get the value for the key 'jdbc.url'. <br>
-     * The value is, e.g. jdbc:h2:file:$classes(jp.luxa.lom.dbflute.allcommon.DBCurrent.class)/../../etc/testdb/lomdb <br>
+     * The value is, e.g. jdbc:mysql://localhost:43376/lomdb <br>
      * comment: The URL of database connection for JDBC
      * @return The value of found property. (NotNull: if not found, exception but basically no way)
      */
@@ -284,11 +287,26 @@ public interface LomEnv {
 
     /**
      * Get the value for the key 'server.domain'. <br>
-     * The value is, e.g. localhost:8090/lom <br>
+     * The value is, e.g. localhost:9090/lom <br>
      * comment: domain to access this application from internet, e.g. for registration mail
      * @return The value of found property. (NotNull: if not found, exception but basically no way)
      */
     String getServerDomain();
+
+    /**
+     * Get the value for the key 'A'. <br>
+     * The value is, e.g.  <br>
+     * @return The value of found property. (NotNull: if not found, exception but basically no way)
+     */
+    String getA();
+
+    /**
+     * Get the value for the key 'A' as {@link Integer}. <br>
+     * The value is, e.g.  <br>
+     * @return The value of found property. (NotNull: if not found, exception but basically no way)
+     * @throws NumberFormatException When the property is not integer.
+     */
+    Integer getAAsInteger();
 
     /**
      * The simple implementation for configuration.
@@ -393,6 +411,14 @@ public interface LomEnv {
 
         public String getServerDomain() {
             return get(LomEnv.SERVER_DOMAIN);
+        }
+
+        public String getA() {
+            return get(LomEnv.A);
+        }
+
+        public Integer getAAsInteger() {
+            return getAsInteger(LomEnv.A);
         }
     }
 }

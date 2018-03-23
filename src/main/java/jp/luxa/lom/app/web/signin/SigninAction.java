@@ -17,9 +17,9 @@ package jp.luxa.lom.app.web.signin;
 
 import javax.annotation.Resource;
 
+import jp.luxa.lom.app.web.RootAction;
 import jp.luxa.lom.app.web.base.LomBaseAction;
 import jp.luxa.lom.app.web.base.login.LomLoginAssist;
-import jp.luxa.lom.app.web.mypage.MypageAction;
 import jp.luxa.lom.mylasta.action.LomMessages;
 import org.lastaflute.core.util.LaStringUtil;
 import org.lastaflute.web.Execute;
@@ -43,7 +43,8 @@ public class SigninAction extends LomBaseAction {
     @Execute
     public HtmlResponse index() {
         if (getUserBean().isPresent()) {
-            return redirect(MypageAction.class);
+            return asHtml(path_Test_TestHtml);
+            //return redirect(MypageAction.class);
         }
         return asHtml(path_Signin_SigninHtml);
     }
@@ -55,7 +56,7 @@ public class SigninAction extends LomBaseAction {
             return asHtml(path_Signin_SigninHtml);
         });
         return loginAssist.loginRedirect(createCredential(form), op -> op.rememberMe(form.rememberMe), () -> {
-            return redirect(MypageAction.class);
+            return redirect(RootAction.class);
         });
     }
 

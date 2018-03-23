@@ -16,7 +16,6 @@
 package jp.luxa.lom.app.web;
 
 import jp.luxa.lom.app.web.base.LomBaseAction;
-import jp.luxa.lom.app.web.mypage.MypageAction;
 import org.lastaflute.web.Execute;
 import org.lastaflute.web.login.AllowAnyoneAccess;
 import org.lastaflute.web.response.HtmlResponse;
@@ -29,6 +28,7 @@ public class RootAction extends LomBaseAction {
 
     @Execute
     public HtmlResponse index() {
-        return redirect(MypageAction.class);
+        // TODO someone redirect to /mypage
+        return asHtml(path_Test_TestHtml);
     }
 }

@@ -46,22 +46,11 @@ public class DBMetaInstanceHandler implements DBMetaProvider {
     protected static final Map<String, String> _tableDbNameClassNameMap;
     static {
         final Map<String, String> tmpMap = newHashMap();
-        tmpMap.put("member", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberDbm");
-        tmpMap.put("member_address", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberAddressDbm");
-        tmpMap.put("member_following", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberFollowingDbm");
-        tmpMap.put("member_login", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberLoginDbm");
-        tmpMap.put("member_security", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberSecurityDbm");
-        tmpMap.put("member_service", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberServiceDbm");
-        tmpMap.put("member_status", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberStatusDbm");
-        tmpMap.put("member_withdrawal", "jp.luxa.lom.dbflute.bsentity.dbmeta.MemberWithdrawalDbm");
-        tmpMap.put("product", "jp.luxa.lom.dbflute.bsentity.dbmeta.ProductDbm");
-        tmpMap.put("product_category", "jp.luxa.lom.dbflute.bsentity.dbmeta.ProductCategoryDbm");
-        tmpMap.put("product_status", "jp.luxa.lom.dbflute.bsentity.dbmeta.ProductStatusDbm");
-        tmpMap.put("purchase", "jp.luxa.lom.dbflute.bsentity.dbmeta.PurchaseDbm");
-        tmpMap.put("purchase_payment", "jp.luxa.lom.dbflute.bsentity.dbmeta.PurchasePaymentDbm");
-        tmpMap.put("region", "jp.luxa.lom.dbflute.bsentity.dbmeta.RegionDbm");
-        tmpMap.put("service_rank", "jp.luxa.lom.dbflute.bsentity.dbmeta.ServiceRankDbm");
-        tmpMap.put("withdrawal_reason", "jp.luxa.lom.dbflute.bsentity.dbmeta.WithdrawalReasonDbm");
+        tmpMap.put("account", "jp.luxa.lom.dbflute.bsentity.dbmeta.AccountDbm");
+        tmpMap.put("account_profile", "jp.luxa.lom.dbflute.bsentity.dbmeta.AccountProfileDbm");
+        tmpMap.put("community", "jp.luxa.lom.dbflute.bsentity.dbmeta.CommunityDbm");
+        tmpMap.put("location", "jp.luxa.lom.dbflute.bsentity.dbmeta.LocationDbm");
+        tmpMap.put("user_grouping", "jp.luxa.lom.dbflute.bsentity.dbmeta.UserGroupingDbm");
         _tableDbNameClassNameMap = Collections.unmodifiableMap(tmpMap);
     }
 

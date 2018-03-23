@@ -15,19 +15,17 @@
  */
 package jp.luxa.lom.app.web.signin;
 
-import javax.annotation.Resource;
-
-import org.dbflute.utflute.lastaflute.mock.TestingHtmlData;
 import jp.luxa.lom.app.web.base.login.LomLoginAssist;
-import jp.luxa.lom.app.web.mypage.MypageAction;
-import jp.luxa.lom.dbflute.exbhv.MemberLoginBhv;
 import jp.luxa.lom.mylasta.action.LomHtmlPath;
 import jp.luxa.lom.mylasta.action.LomMessages;
 import jp.luxa.lom.mylasta.action.LomUserBean;
 import jp.luxa.lom.unit.UnitLomTestCase;
+import org.dbflute.utflute.lastaflute.mock.TestingHtmlData;
 import org.lastaflute.core.time.TimeManager;
 import org.lastaflute.web.response.HtmlResponse;
 import org.lastaflute.web.validation.Required;
+
+import javax.annotation.Resource;
 
 /**
  * @author jflute
@@ -36,8 +34,6 @@ public class SigninActionTest extends UnitLomTestCase {
 
     @Resource
     private TimeManager timeManager;
-    @Resource
-    private MemberLoginBhv memberLoginBhv;
     @Resource
     private LomLoginAssist loginAssist;
 
@@ -59,14 +55,10 @@ public class SigninActionTest extends UnitLomTestCase {
 
         // ## Assert ##
         TestingHtmlData htmlData = validateHtmlData(response);
-        htmlData.assertRedirect(MypageAction.class);
-
+//        htmlData.assertRedirect(MypageAction.class);
+        htmlData.assertHtmlForward(LomHtmlPath.path_Test_TestHtml);
         LomUserBean userBean = loginAssist.getSavedUserBean().get();
         log(userBean);
-        assertEquals(form.account, userBean.getMemberAccount());
-        assertEquals(1, memberLoginBhv.selectCount(cb -> {
-            cb.query().setLoginDatetime_Equal(timeManager.currentDateTime()); // transaction time
-        }));
     }
 
     // ===================================================================================

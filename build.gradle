@@ -16,7 +16,7 @@ def defaultEncoding = 'utf-8'
 tasks.withType(GroovyCompile)*.groovyOptions*.encoding = defaultEncoding
 
 // compilation settings
-compileKotlin {
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
     kotlinOptions {
